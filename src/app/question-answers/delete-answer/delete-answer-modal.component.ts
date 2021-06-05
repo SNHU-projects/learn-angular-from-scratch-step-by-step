@@ -13,14 +13,14 @@ export class DeleteAnswerModalComponent {
     public thisDialogRef: MatDialogRef<DeleteAnswerModalComponent>,
     @Inject(MAT_DIALOG_DATA) public modalData: any,
     public answersService: AnswersService
-  ){}
+  ) {}
 
   onCloseConfirm() {
     this.answersService.deleteAnswer(this.modalData.answerId)
     .then(
       res => {
         this.thisDialogRef.close(true);
-      })
+      });
   }
 
   onCloseCancel() {

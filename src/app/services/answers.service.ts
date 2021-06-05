@@ -24,12 +24,12 @@ export class AnswersService {
     .toPromise()
   }
 
-  deleteAnswer(answerId){
+  deleteAnswer(answerId) {
     return this.answerApi.deleteById<Answer>(answerId).toPromise();
   }
 
-  updateAnswer(values){
-    let data = new Answer();
+  updateAnswer(values) {
+    const data = new Answer();
     data.answer = values.answer;
     data.positiveVotes = values.positiveVotes;
     data.negativeVotes = values.negativeVotes;

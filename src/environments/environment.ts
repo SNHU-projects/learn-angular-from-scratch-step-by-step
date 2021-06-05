@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api_url: 'https://q-a-example-loopback-api.herokuapp.com'
+  api_url: 'https://t46x9jted6.execute-api.us-west-2.amazonaws.com'
 };
 
 /*
